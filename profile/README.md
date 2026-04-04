@@ -4,7 +4,7 @@
 
 Built by Raul Montoya Cardenas as both a technical project and a personal recovery story. From traumatic brain injury (TBI) and zero-insurance engineering to a full open-source neuromorphic ecosystem running on FPGA at **97 mW**.
 
-// Currently reconstructing the entire library. Originally came from my massive codebase Eagle-Lander/ship_of_theseus_rs.  At first I would try to use Claude Opus 4.6 to organize the entire codebase.  Unfortnately due to massive binaries and data, Opus disorganize it even worse. Which is why I broke it down modularly, still needs a lot of work but majority of the heavily lifting has been done.  
+Currently reconstructing the entire library. Originally came from my massive codebase Eagle-Lander/ship_of_theseus_rs.  At first I would try to use Claude Opus 4.6 to organize the entire codebase.  Unfortnately due to massive binaries and data, Opus disorganize it even worse. Which is why I broke it down modularly, still needs a lot of work but majority of the heavily lifting has been done.  
 
 ### The Lion in the Temporal Domain
 Spikenaut is not just another SNN. It is a **16-channel adaptive Liquid State Machine** designed for chaotic, real-world environments:
