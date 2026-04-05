@@ -1,15 +1,13 @@
 # Spikenaut
 
-Currently doing an overall haul of my entire project.  When I orginally started I didn't think I would get this far.   I ended up moving to fast. 
-Not mention for organizing folder and files I use AI to help however they made an mess.   So I decided to deleted a lot of stuff, while keeping the crates intact.
-
-I now have an stronger foundstation as an programmer.   I've been treating this project as like an full time.  // 4/4/2026
+Currently doing an overall haul of my entire project.  When I originally started, I didn't think I would get this far.   I ended up moving too fast. 
+In addition to organizing folders and files, I use AI to help; however, it made a mess.   So I decided to delete a lot of stuff, while keeping the crates intact.  I now have a stronger foundation as a programmer.   I've been treating this project as a full-time commitment.  // 4/4/2026
 
 **A real-time spiking neural network (SNN) that turns mining telemetry + market micro-movements into sub-millisecond decisions.**
 
 Built by Raul Montoya Cardenas as both a technical project and a personal recovery story. From traumatic brain injury (TBI) and zero-insurance engineering to a full open-source neuromorphic ecosystem running on FPGA at **97 mW**.
 
-Currently reconstructing the entire library. Originally came from my massive codebase Eagle-Lander/ship_of_theseus_rs.  At first I would try to use Claude Opus 4.6 to organize the entire codebase.  Unfortnately due to massive binaries and data, Opus disorganize it even worse. Which is why I broke it down modularly, still needs a lot of work but majority of the heavily lifting has been done.  
+Currently reconstructing the entire library. Originally came from my massive codebase Eagle-Lander/ship_of_theseus_rs.  At first I would try to use Claude Opus 4.6 to organize the entire codebase.  Unfortunately, due to massive binaries and data, Opus disorganized it even worse. Which is why I broke it down modularly, still needs a lot of work but majority of the heavily lifting has been done.  
 
 ### The Lion in the Temporal Domain
 Spikenaut is not just another SNN. It is a **16-channel adaptive Liquid State Machine** designed for chaotic, real-world environments:
