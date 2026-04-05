@@ -1,5 +1,10 @@
 # Spikenaut
 
+Currently doing an overall haul of my entire project.  When I orginally started I didn't think I would get this far.   I ended up moving to fast. 
+Not mention I like using AI Agents to help orgainze my own code and Ai generated code as well unfortnately they would just runied my code.   So I decided.  My computer and github is one giant mess so instead I am going to do an hard restart on majority of my codebase.  While keeping the crates intact.
+
+I now have an stronger foundstation as an programmer.   I've been treating this project as like an full time.  // 4/4/2026
+
 **A real-time spiking neural network (SNN) that turns mining telemetry + market micro-movements into sub-millisecond decisions.**
 
 Built by Raul Montoya Cardenas as both a technical project and a personal recovery story. From traumatic brain injury (TBI) and zero-insurance engineering to a full open-source neuromorphic ecosystem running on FPGA at **97 mW**.
