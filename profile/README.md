@@ -1,7 +1,7 @@
 # Spikenaut
 
 Currently doing an overall haul of my entire project.  When I orginally started I didn't think I would get this far.   I ended up moving to fast. 
-Not mention I like using AI Agents to help orgainze my own code and Ai generated code as well unfortnately they would just runied my code.   So I decided.  My computer and github is one giant mess so instead I am going to do an hard restart on majority of my codebase.  While keeping the crates intact.
+Not mention for organizing folder and files I use AI to help however they made an mess.   So I decided to deleted a lot of stuff, while keeping the crates intact.
 
 I now have an stronger foundstation as an programmer.   I've been treating this project as like an full time.  // 4/4/2026
 
