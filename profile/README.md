@@ -2,13 +2,13 @@
 Welcome to the Spikenaut organization. This ecosystem is dedicated to the research, development, and deployment of Spiking Neural Networks (SNNs) for high-frequency data environments, ranging from hardware telemetry and crypto-mining optimization to hybrid LLM architectures.
 
 ⚠️ The Great Reset: Current Status (April 2026)
-We are currently in a "Ground Zero" rebuilding phase. After a successful initial prototype, the project scale expanded rapidly. To ensure long-term stability and scientific integrity, we are systematically verifying the entire pipeline from hardware telemetry up to high-level logic.
+I am currently in a "Ground Zero" rebuilding phase. After a successful initial prototype, the project's scale expanded rapidly. To ensure long-term stability and scientific integrity, I am systematically verifying the entire pipeline from hardware telemetry up to high-level logic.
 
 Current Objective: Absolute verification of the telemetry ingest layer.
 
 🛠 Active Research Tracks
 1. Hardware Telemetry & Baseline Verification (spikenaut-telemetry)
-The foundation of the research is grounded in real-world hardware dynamics. We use Dynex mining hardware as our primary baseline.
+The research is grounded in real-world hardware dynamics. I use Dynex mining hardware as our primary baseline.
 
 Goal: Stable, high-fidelity capture of GPU/CPU metrics and mining algorithm efficiency.
 
@@ -40,4 +40,6 @@ Core Crate: neuromod - The proprietary brain of the project, handling LIF neuron
 Hardware: Deployment targets include AMD/NVIDIA GPUs for simulation and Digilent Basys 3 FPGAs for physical spike verification.
 
 📜 Contributing
-Spikenaut is currently in a closed-rebuild phase. While the repositories are public for transparency and open-source compliance (GPL-3.0), we are prioritizing a steady, solo-led engineering pace to ensure the research foundation is bulletproof.
+Spikenaut is currently in a closed-rebuild phase. The repositories are public for transparency and open-source compliance (GPL-3.0). I am are prioritizing a steady, solo-led engineering pace to ensure the research foundation is solid.
+
+This documentation summary were drafted by Gemini, a large language model built by Google, based on the specific research parameters and project history provided by Raul Montoya Cardenas
