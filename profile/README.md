@@ -1,79 +1,43 @@
-# Spikenaut
+🧠 Spikenaut: Neuromorphic Systems Research
+Welcome to the Spikenaut organization. This ecosystem is dedicated to the research, development, and deployment of Spiking Neural Networks (SNNs) for high-frequency data environments, ranging from hardware telemetry and crypto-mining optimization to hybrid LLM architectures.
 
-Currently doing an overall haul of my entire project.  When I originally started, I didn't think I would get this far.   I ended up moving too fast. 
-In addition to organizing folders and files, I use AI to help; however, it made a mess.   So I decided to delete a lot of stuff, while keeping the crates intact.  I now have a stronger foundation as a programmer.   I've been treating this project as a full-time commitment.  // 4/4/2026
+⚠️ The Great Reset: Current Status (April 2026)
+We are currently in a "Ground Zero" rebuilding phase. After a successful initial prototype, the project's scale expanded rapidly. To ensure long-term stability and scientific integrity, we are systematically verifying the entire pipeline from hardware telemetry up to high-level logic.
 
-**A real-time spiking neural network (SNN) that turns mining telemetry + market micro-movements into sub-millisecond decisions.**
+Current Objective: Absolute verification of the telemetry ingest layer.
 
-Built by Raul Montoya Cardenas as both a technical project and a personal recovery story. From traumatic brain injury (TBI) and zero-insurance engineering to a full open-source neuromorphic ecosystem running on FPGA at **97 mW**.
+🛠 Active Research Tracks
+1. Hardware Telemetry & Baseline Verification (spikenaut-telemetry)
+The foundation of the research is grounded in real-world hardware dynamics. I use Dynex mining hardware as our primary baseline.
 
-Currently reconstructing the entire library. Originally came from my massive codebase Eagle-Lander/ship_of_theseus_rs.  At first I would try to use Claude Opus 4.6 to organize the entire codebase.  Unfortunately, due to massive binaries and data, Opus disorganized it even worse. Which is why I broke it down modularly, still needs a lot of work but majority of the heavily lifting has been done.  
+Goal: Stable, high-fidelity capture of GPU/CPU metrics and mining algorithm efficiency.
 
-### The Lion in the Temporal Domain
-Spikenaut is not just another SNN. It is a **16-channel adaptive Liquid State Machine** designed for chaotic, real-world environments:
+Status: Re-verifying the telemetry layer to eliminate noise and ensure 100% data integrity before feeding it into the SNN reservoirs.
 
-- Live blockchain node telemetry (Kaspa, Monero, Dynex, Quai, Qubic, Ocean, Verus), only so far some node telemetry have been used in training.   Plan to add the rest later.
-- Thermal "pain" sensors for hardware self-protection
-- Ghost-money HFT engine with reward-modulated learning
+Focus: Consolidating from multiple miners back to a singular, rock-solid Dynex baseline.
 
-It processes asynchronous spike trains, adapts online with E-prop + OTTT, and outputs confidence signals for high-frequency trading decisions — all while staying extremely lightweight (1.6 KB memory, Q8.8 fixed-point).
+2. HFT-SNN Research (The Financial Layer)
+Applying neuromorphic temporal processing to High-Frequency Trading (HFT) environments.
 
-**Key Hardware Metrics (Artix-7 FPGA)**
-- Power: **97 mW**
-- Inference: **0.9 ms/tick**
-- Training: **35 µs/tick**
-- Memory: **1.6 KB**
-- Bridge: Zero-copy Rust ↔ Julia (< 1 µs IPC)
+Goal: Utilizing the low-latency nature of SNNs to process market micro-structures.
 
+Status: Project listed for stability testing once the hardware telemetry baseline is verified.
 
-Profits from personal HFT and mining optimization directly fund R&D in:
-- BCI focus loops (ADHD & neuro-regulation)
-- Neuromorphic prosthetics
-- Human Check Light (preventative wearable health)
-- Sustainable crypto mining
-- An future ETF to create wealth among average retail investor
+3. SpikeLMo: SNN-Infused LLM Logic
+The most ambitious track—exploring the fusion of SNN temporal gating with the OLMoE (Mixture of Experts) 7B architecture.
 
-> "The lion didn’t roar for attention. It roared because it had no other choice."  
-> — Built by an uninsured studnet engineer in Texas, turning brain fog and hardware stress into actionable spikes.
+Concept: Utilizing SNNs to act as the "Neuromorphic Router" for LLM experts, optimizing for efficiency and real-time responsiveness.
 
-### Core Repositories
+Status: Theoretical architecture and initial logic mapping.
 
-#### Rust Crates (Performance & FPGA Layer)
-- **[neuromod](https://github.com/Spikenaut/neuromod)** — Reward-modulated neuromodulators (dopamine, cortisol, acetylcholine) + R-STDP
-- **[soma-engine](https://github.com/Spikenaut/soma-engine)** — Core SNN inference engine
-- **[synapse-link](https://github.com/Spikenaut/synapse-link)** — UART/FPGA serial I/O bridge
-- **[synapse-spike](https://github.com/Spikenaut/synapse-spike)** — Spike encoding & routing
+🏗 System Architecture
+The research is developed on the Ship of Theseus workstation (Fedora 43), utilizing a specialized tech stack:
 
-#### Julia Packages (Training & Strategy)
-- **[SpikenautLSM.jl](https://github.com/Spikenaut/SpikenautLSM.jl)** — 65k-neuron sparse GPU-accelerated Liquid State Machine
-- **[SpikenautExecution.jl](https://github.com/Spikenaut/SpikenautExecution.jl)** — Async trade pipeline (ZMQ → Kelly sizing → dYdX)
-- **[SpikenautDistill.jl](https://github.com/Spikenaut/SpikenautDistill.jl)** — E-prop training + Q8.8 FPGA distillation
-- **[SpikenautSignals.jl](https://github.com/Spikenaut/SpikenautSignals.jl)** — Streaming time-series features for SNNs
-- **[spikenaut-capital](https://github.com/Spikenaut/spikenaut-capital)** — Corporate blueprint & capital engine
+Languages: Rust (Core logic/Hardware I/O), Julia (Mathematical modeling/Research), SystemVerilog (FPGA deployment).
 
-#### Hardware & Acceleration
-- **[spikenaut-bridge-sv](https://github.com/Spikenaut/spikenaut-bridge-sv)** — Synthesizable UART-neural cortex bridge (SystemVerilog)
-- **[myelin-accelerator](https://github.com/Spikenaut/myelin-accelerator)** — CUDA spiking kernels
+Core Crate: neuromod - The proprietary brain of the project, handling LIF neurons and STDP plasticity.
 
-### Main Model & Data
-- **HF Model**: [rmems/Spikenaut-SNN-v2](https://huggingface.co/rmems/Spikenaut-SNN-v2) — 16-channel adaptive LSM with live telemetry + ghost HFT results
-- **Dataset**: Linked telemetry (132k+ events from real blockchain nodes) with weights and parameters
+Hardware: Deployment targets include AMD/NVIDIA GPUs for simulation and Digilent Basys 3 FPGAs for physical spike verification.
 
-### Get Involved
-- **Star** the org or key repos if this resonates.
-- **Fork & experiment** — everything is open (mostly GPL-3.0) for research and non-commercial use.
-- **Contributions welcome** on modularity, FPGA targets, BCI extensions, or documentation.
-- Looking for collaborators in neuromorphic hardware, quant trading, or med-tech.
-
-### Philosophy
-Zero-gatekeeper engineering.  
-Hardware-aware, biologically inspired, built for the edge and the uninsured.  
-HFT capital fuels deep-tech R&D — the Wheel Funnel in motion.
-
-**"Defining the Threshold of Intelligence."**
-
----
-
-**Made in Texas • 2026**  
-Raul Montoya Cardenas — Founder, Limen Neural Holdings  
-[HF Model](https://huggingface.co/rmems/Spikenaut-SNN-v2) • [Instagram](https://www.instagram.com/raccooncity_resident/) • [X](https://x.com/KeepOnSpiking)
+📜 Contributing
+Spikenaut is currently in a closed-rebuild phase. While the repositories are public for transparency and open-source compliance (GPL-3.0), I am prioritizing a steady research foundation is bulletproof.
