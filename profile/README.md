@@ -1,45 +1,35 @@
-🧠 Spikenaut: Neuromorphic Systems Research
-Welcome to the Spikenaut organization. This ecosystem is dedicated to the research, development, and deployment of Spiking Neural Networks (SNNs) for high-frequency data environments, ranging from hardware telemetry and crypto-mining optimization to hybrid LLM architectures.
+🧠 Limen Neural
+A solo research and engineering initiative focused on the boundary between neuromorphic computation, high-performance silicon, and biological feedback systems.
 
-⚠️ The Great Reset: Current Status (April 2026)
-I am currently in a "Ground Zero" rebuilding phase. After a successful initial prototype, the project's scale expanded rapidly. To ensure long-term stability and scientific integrity, I am systematically verifying the entire pipeline from hardware telemetry up to high-level logic.
+Limen Neural isn't a company; it is the infrastructure for a specific architectural goal: I built the Ship of Theseus—my workstation for AI workloads.  Software stack where every component is systematically upgraded and optimized for pure Spiking Neural Network (SNN) execution.
 
-Current Objective: Absolute verification of the telemetry ingest layer.
+The Architecture: Ship of Theseus
+The current focus is on developing a high-performance SNN chassis that bridges the gap between massive Large Language Models (LLMs) and biological temporal logic.
 
-🛠 Active Research Tracks
-1. Hardware Telemetry & Baseline Verification (spikenaut-telemetry)
-The research is grounded in real-world hardware dynamics. I use Dynex mining hardware as our primary baseline.
+Host Environment: Fedora 43 / Blackwell-optimized Linux kernel.
 
-Goal: Stable, high-fidelity capture of GPU/CPU metrics and mining algorithm efficiency.
+Hardware Core: AMD Ryzen 9 9950X + ASUS ProArt RTX 5080 (16GB VRAM).
 
-Status: Re-verifying the telemetry layer to eliminate noise and ensure 100% data integrity before feeding it into the SNN reservoirs.
+The SNN Engine: Spikenaut, a pure Spiking Neural Network designed to run natively on Blackwell silicon using custom sm_120 CUDA kernels and warp-level parallelization.
 
-Focus: Consolidating from multiple miners back to a singular, rock-solid Dynex baseline.
+Current State
+I am currently finalizing the "Chassis" phase:
 
-2. HFT-SNN Research (The Financial Layer)
-Applying neuromorphic temporal processing to High-Frequency Trading (HFT) environments.
+Transplantation: Successfully migrated the myelin-accelerator CUDA core into the corinth-canal chassis.
 
-Goal: Utilizing the low-latency nature of SNNs to process market micro-structures.
+Scaling: Standardized the full-path architecture to a 2048-neuron baseline to match the hidden dimensions of models like AllenAI’s OLMoE.
 
-Status: Project listed for stability testing once the hardware telemetry baseline is verified.
+Modularity: Been working on refactoring the original private codebase into a standalone repo, a hardware-agnostic library that can be dropped into any project requiring rate, temporal, or neuromodulated encoding.
 
-3. SpikeLMo: SNN-Infused LLM Logic
-The most ambitious track—exploring the fusion of SNN temporal gating with the OLMoE (Mixture of Experts) 7B architecture.
+Optimization: Implementing a two-pass VRAM reduction system to extract SAAQ (Spiking Activity and Adaptive Quantization) telemetry directly from the RTX 5080 with minimal PCIe overhead.
 
-Concept: Utilizing SNNs to act as the "Neuromorphic Router" for LLM experts, optimizing for efficiency and real-time responsiveness.
+Immediate Goals
+Temporal Tick-Loop: Completing the real-time simulation loop that advances SNN physics (t = t + dt) natively on the GPU.
 
-Status: Theoretical architecture and initial logic mapping.
+Telemetry Discovery: Using the SAAQ telemetry pipeline to map LLM latent spaces to SNN activity for real-time latent discovery via Julia-based symbolic regression.
 
-🏗 System Architecture
-The research is developed on the Ship of Theseus workstation (Fedora 43), utilizing a specialized tech stack:
 
-Languages: Rust (Core logic/Hardware I/O), Julia (Mathematical modeling/Research), SystemVerilog (FPGA deployment).
+The Philosophy
+I believe that for AI to evolve, it must move closer to the efficiency of the biological brain. This requires moving away from the "black box" of backpropagation and toward the transparent, event-driven nature of spikes. Every line of code in this organization is written to prove that a single engineer, armed with a Blackwell chip and a custom Rust stack, can build a system more efficient and more "alive" than the industry giants.
 
-Core Crate: neuromod - The proprietary brain of the project, handling LIF neurons and STDP plasticity.
-
-Hardware: Deployment targets include AMD/NVIDIA GPUs for simulation and Digilent Basys 3 FPGAs for physical spike verification.
-
-📜 Contributing
-Spikenaut is currently in a closed-rebuild phase. The repositories are public for transparency and open-source compliance (GPL-3.0). I am are prioritizing a steady, solo-led engineering pace to ensure the research foundation is solid.
-
-This documentation summary were drafted by Gemini, a large language model built by Google, based on the specific research parameters and project history provided by Raul Montoya Cardenas
+Gemini drafted this documentation summary, a large language model built by Google, based on the specific research parameters and project history provided by Raul Montoya Cardenas
