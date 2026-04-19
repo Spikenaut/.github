@@ -1,35 +1,52 @@
-🧠 Limen Neural
-A solo research and engineering initiative focused on the boundary between neuromorphic computation, high-performance silicon, and biological feedback systems.
+---
+# 🧠 Limen Neural — Generalized Neuromorphic Library
 
-Limen Neural isn't a company; it is the infrastructure for a specific architectural goal: I built the Ship of Theseus—my workstation for AI workloads.  Software stack where every component is systematically upgraded and optimized for pure Spiking Neural Network (SNN) execution.
+Hey, I'm Raul. I'm an out-of-the-box tinkerer, builder, and relentless experimenter based in San Marcos, Texas. What hooked me was the elegance — the way spikes, timing, and sparse events could mirror real brain-like.  The excitement was addictive, and suddenly I was in deep hyperfocus: experimenting with temporal coding, data extraction, playing with FPGA ideas, and trying to build biologically plausible systems from the ground up, right on my new build rig
 
-The Architecture: Ship of Theseus
-The current focus is on developing a high-performance SNN chassis that bridges the gap between massive Large Language Models (LLMs) and biological temporal logic.
+But here's the honest part: rapid growth + hyperfocus = messy codebase. I treated GitHub more like a personal cloud backup than a proper development platform. Accidental terminal deletions wiped out chunks of work. Modules were scattered. Dependencies were tied to my local Fedora setup. Even an AI coding agent I tried made things worse at times. A lot of early "real" code got lost in the chaos.
 
-Host Environment: Fedora 43 / Blackwell-optimized Linux kernel.
+Because of that rapid growth, a lot of the early code became chaotic:  
+accidental terminal deletions, disorganized modules, local Fedora‑specific dependencies, and an AI agent that made things worse instead of better, a lot of my real code began washing down. I used GitHub mostly as a cloud backup, not as a real development platform.
 
-Hardware Core: AMD Ryzen 9 9950X + ASUS ProArt RTX 5080 (16GB VRAM).
+Everything is moving toward being **portable, reproducible, and free of local environment quirks**.
 
-The SNN Engine: Spikenaut, a pure Spiking Neural Network designed to run natively on Blackwell silicon using custom sm_120 CUDA kernels and warp-level parallelization.
+### Current State & Roadmap
 
-Current State
-I am currently finalizing the "Chassis" phase:
+- Removing Fedora-specific and other local dependencies
+- Eventually bringing back HDL libraries for FPGA neuromorphic enthusiasts
+- Spikenaut will return in a cleaner, stronger form as I rebuild the algorithms, data engineering, and architecture behind it.
 
-Transplantation: Successfully migrated the myelin-accelerator CUDA core into the corinth-canal chassis.
+This won't happen overnight — it's a deliberate, careful rebuild. But I'm committed to doing it right.
 
-Scaling: Standardized the full-path architecture to a 2048-neuron baseline to match the hidden dimensions of models like AllenAI’s OLMoE.
+I want Limen Neural to become a clean, open, community‑friendly project — not something trapped on my local machine. I want to rebuild the parts that were lost, refine the parts that survived, and finally share the work I’ve been doing on Spikenaut, neuromorphic data and algorithms, now SAAQ (Spiking Activity Adaptive Quantization) and Metis (MoE-SNN), in a way that others can actually use.
+Even as an opportunity to learn from y'all.  
 
-Modularity: Been working on refactoring the original private codebase into a standalone repo, a hardware-agnostic library that can be dropped into any project requiring rate, temporal, or neuromodulated encoding.
+If you have ideas, suggestions, or want to collaborate, I’d genuinely love to hear them.
 
-Optimization: Implementing a two-pass VRAM reduction system to extract SAAQ (Spiking Activity and Adaptive Quantization) telemetry directly from the RTX 5080 with minimal PCIe overhead.
+The long‑term goal is simple:
+---
 
-Immediate Goals
-Temporal Tick-Loop: Completing the real-time simulation loop that advances SNN physics (t = t + dt) natively on the GPU.
+## 🚀 Purpose
 
-Telemetry Discovery: Using the SAAQ telemetry pipeline to map LLM latent spaces to SNN activity for real-time latent discovery via Julia-based symbolic regression.
+Limen Neural provides a clean, reusable foundation for:
+
+- **Spiking Neural Network (SNN) encoding**  
+  Rate, temporal, population, and neuromodulated encoders.
+
+- **GPU‑accelerated SNN simulation**  
+  Designed to integrate with CUDA, maybe even ROCm, or CPU backends.
+
+- **Telemetry extraction & quantization**  
+  Including SAAQ (Spiking Activity & Adaptive Quantization) and data extraction for hardware‑driven learning.
+
+- **LLM ↔ SNN fusion research**  
+  A standardized interface for converting embeddings, latents, or activations into spike‑based dynamics.
+
+This future library is going to be the “generalized chassis” extracted from the original workstation‑bound architecture — now being rebuilt to be portable, reproducible, and open.
 
 
-The Philosophy
-I believe that for AI to evolve, it must move closer to the efficiency of the biological brain. This requires moving away from the "black box" of backpropagation and toward the transparent, event-driven nature of spikes. Every line of code in this organization is written to prove that a single engineer, armed with a Blackwell chip and a custom Rust stack, can build a system more efficient and more "alive" than the industry giants.
+This project is as much about the journey as the destination. Thanks for stopping by — let's push neuromorphic computing forward together, one spike at a time. ⚡
 
-Gemini drafted this documentation summary, a large language model built by Google, based on the specific research parameters and project history provided by Raul Montoya Cardenas
+---
+
+*“The long-term goal is simple: Build a modular, hardware-agnostic toolkit for encoding, simulation, telemetry, neuromorphic algorithms, SNN-LLM quantization, and bio-inspired computation — without relying on any local environment quirks.”*
